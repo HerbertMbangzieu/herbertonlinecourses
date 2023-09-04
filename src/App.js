@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Alert from './components/Alert';
 
 function App() {
   return (
     <div className="App">
-      <div className="w-100 p-3 text-center text-red-dark bg-red-light"> Alert danger </div>
+      <Alert message='Mettre en gras' type='danger'/>
     </div>
   );
 }
