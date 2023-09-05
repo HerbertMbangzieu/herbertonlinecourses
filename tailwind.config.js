@@ -32,6 +32,12 @@ module.exports = {
           'light':'#93c5fd',
           'dark':'#1e3a8a',
         },
+        'gray':{
+          'primary':'#6b7280',
+          'secondary':'#9ca3af',
+          'light':'#e5e7eb',
+          'dark':'#374151',
+        },
       }
     },
   },

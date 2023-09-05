@@ -1,10 +1,11 @@
 import './App.css';
-import Alert from './components/Alert';
+import Button from './components/Button';
 
 function App() {
+
   return (
     <div className="App">
-      <Alert message='Mettre en gras' type='danger'/>
+      <Button text={'Enregistrer'} type={'warning'}/>
     </div>
   );
 }
