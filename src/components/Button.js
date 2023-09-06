@@ -17,12 +17,15 @@ useEffect(()=>{
     else if(type === 'info'){
         setBackground('bg-gradient-to-b from-blue-secondary to-blue-primary text-white')
     }
+    else{
+        setBackground('bg-gradient-to-b from-gray-primary to-gray-dark text-white')
+    }
 })
 
     
     
   return (
-    <div className={`text-center font-semibold py-1 rounded-lg shadow-lg shadow-gray-secondary ${background}`}>
+    <div className={`text-center font-semibold py-1 rounded-lg cursor-pointer active:scale-95 shadow-lg shadow-gray-secondary ${background}`}>
         {text}
     </div>
   )
