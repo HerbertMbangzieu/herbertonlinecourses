@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react'
 
 const SelectSchool = (props) => {
-    const [school, setSchool] = useState(null)
     const [schools, setSchools] = useState(null)
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)

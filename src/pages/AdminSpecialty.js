@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import { AdminNavbar } from '../components'
 import SelectSchool from '../components/sections/SelectSchool'
 import SpecialtyList from '../components/sections/SpecialtyList'

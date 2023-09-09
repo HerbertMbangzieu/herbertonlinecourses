@@ -38,7 +38,61 @@
         {
           "name": "Software Engineering 2",
           "code": "SWE 2",
-          "courses": []
+          "courses": [
+            {
+              "title": "Algorithm and Programming",
+              "author": "Herbert Mbangzieu",
+              "lessons": [
+                {
+                  "title": "variables and constants"
+                },
+                {
+                  "title": "control structures"
+                }
+              ]
+            },
+            {
+              "title": "Operating Systems",
+              "author": "Flavien Nguemeni",
+              "lessons": [
+                {
+                  "title": "Introduction to OS",
+                  "quizz": [],
+                  "exercises": []
+                },
+                {
+                  "title": "Process Management",
+                  "quizz": [],
+                  "exercises": []
+                },
+                {
+                  "title": "Memory Management",
+                  "quizz": [],
+                  "exercises": []
+                }
+              ]
+            },
+            {
+              "title": "ppp",
+              "author": "ppp",
+              "lessons": []
+            },
+            {
+              "title": "ppp",
+              "author": "ppp",
+              "lessons": []
+            },
+            {
+              "title": "ppp",
+              "author": "ppp",
+              "lessons": []
+            },
+            {
+              "title": "Introduction to Database",
+              "author": "Herbert Mbangzieu",
+              "lessons": []
+            }
+          ]
         },
         {
           "name": "Génie Logiciel 2",

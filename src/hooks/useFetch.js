@@ -28,5 +28,4 @@ const useFetch = (url) => {
     
   return {schools, loading, error}
 }
-
 export default useFetch

@@ -1,5 +1,5 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom/cjs/react-router-dom.min";
-import { AdminSchool, AdminSpecialty } from "../pages";
+import { AdminCourse, AdminSchool, AdminSpecialty } from "../pages";
 
 const Routes = () => {
   return (
@@ -37,8 +37,8 @@ const Routes = () => {
             <AdminSpecialty/>
         </Route>
 
-        <Route exact path='/admin/courses/:school/:specialty'>
-
+        <Route exact path='/admin/courses'>
+            <AdminCourse/>
         </Route>
         
         <Route exact path='/admin/lessons/:school/:specialty/:course'>
