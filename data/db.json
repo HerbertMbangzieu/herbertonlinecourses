@@ -1,0 +1,125 @@
+{
+  "schools": [
+    {
+      "name": "Lycée Technique de Loum",
+      "code": "lytelo",
+      "description": "Lycée d'Enseignement technique Industriel et Commercial",
+      "logo": "lytelo.png",
+      "specialties": [
+        {
+          "name": "Première Industrielle",
+          "code": "P: IND",
+          "courses": []
+        },
+        {
+          "name": "4ème Année Industrielle",
+          "code": "A 4 IND",
+          "courses": []
+        },
+        {
+          "name": "Terminale Industrielle",
+          "code": "T.IND",
+          "courses": []
+        },
+        {
+          "name": "Seconde Industrielle",
+          "code": "2NDE IND",
+          "courses": []
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Jacky Felly Nafack High University Institute",
+      "code": "jfn-hui",
+      "description": "Institut Universitaire Bilingue",
+      "logo": "jfn-hui.png",
+      "specialties": [
+        {
+          "name": "Software Engineering 2",
+          "code": "SWE 2",
+          "courses": [
+            {
+              "title": "Algorithm and Programming",
+              "author": "Herbert Mbangzieu",
+              "lessons": [
+                {
+                  "title": "variables and constants"
+                },
+                {
+                  "title": "control structures"
+                }
+              ]
+            },
+            {
+              "title": "Operating Systems",
+              "author": "Flavien Nguemeni",
+              "lessons": [
+                {
+                  "title": "Introduction to OS",
+                  "quizz": [],
+                  "exercises": []
+                },
+                {
+                  "title": "Process Management",
+                  "quizz": [],
+                  "exercises": []
+                },
+                {
+                  "title": "Memory Management",
+                  "quizz": [],
+                  "exercises": []
+                }
+              ]
+            },
+            {
+              "title": "ppp",
+              "author": "ppp",
+              "lessons": []
+            },
+            {
+              "title": "ppp",
+              "author": "ppp",
+              "lessons": []
+            },
+            {
+              "title": "ppp",
+              "author": "ppp",
+              "lessons": []
+            },
+            {
+              "title": "Introduction to Database",
+              "author": "Herbert Mbangzieu",
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "name": "Génie Logiciel 2",
+          "code": "GL2",
+          "courses": []
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Complexe Scolaire Bilingue NAL",
+      "code": "cosbinal",
+      "description": "bla bla bla",
+      "logo": "cosbinal.png",
+      "specialties": [
+        {
+          "name": "Upper Sixth Science",
+          "code": "USS",
+          "courses": []
+        },
+        {
+          "name": "Lower Sixth Science",
+          "code": "LSS",
+          "courses": []
+        }
+      ],
+      "id": 4
+    }
+  ]
+}

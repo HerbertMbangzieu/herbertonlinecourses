@@ -1,11 +1,10 @@
 import './App.css';
-import Button from './components/Button';
+import Routes from './routes/Routes';
 
 function App() {
-
   return (
     <div className="App">
-      <Button text={'Enregistrer'} type={'warning'}/>
+      <Routes/>
     </div>
   );
 }
