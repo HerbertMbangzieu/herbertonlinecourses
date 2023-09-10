@@ -4,6 +4,8 @@ import SelectSpecialty from '../components/sections/SelectSpecialty'
 import CourseList from '../components/sections/CourseList'
 import CourseForm from '../components/sections/CourseForm'
 import CourseDetails from '../components/sections/CourseDetails'
+import DeleteCourse from '../components/sections/DeleteCourse'
+import Alert from '../components/Alert'
 
 const AdminCourse = () => {
     const [course, setCourse] = useState(null)
@@ -16,6 +18,8 @@ const AdminCourse = () => {
     const [schools, setSchools] = useState(null)
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
+    const [deletedMessage, setDeletedMessage] = useState(null)
+    const [deleted, setDeleted] = useState(false)
 
     useEffect(()=>{
         fetch('http://localhost:5000/schools')
@@ -73,12 +77,15 @@ const AdminCourse = () => {
   return (
     <div>
         <AdminNavbar/>
+        
+      { destroy && <DeleteCourse course={course} setActiveCourse={setActiveCourse} activeSchool={activeSchool} specialty={specialty} setDeletedMessage={setDeletedMessage} setDeleted={setDeleted} />}
         <div>
             {schools && <SelectSpecialty setActiveSchool={setActiveSchool} schools = {schools} setSpecialty={setSpecialty} />}
         </div>
 
-        <div className='w-full flex'>
+        <div className='w-full flex mt-3 px-4'>
             <div className="w-1/2">
+              {deleted && <Alert message={deletedMessage} type={'danger'}/>}
                 { specialty && <CourseList specialty={specialty} setActiveCourse={setActiveCourse} /> }
             </div>
 

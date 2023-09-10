@@ -16,10 +16,10 @@ const CourseForm = (props) => {
   useEffect(()=>{
     console.log(course)
   },[course])
+
   const handleSubmit = (e) => {
     e.preventDefault()
     const index = school.specialties.findIndex((specialty)=>{ return specialty === props.specialty})
-    console.log(index);
     if(props.course ){
       const lessons = props.course.lessons
       const id = props.specialty.courses.findIndex((crs)=>{ return crs === props.course})
@@ -29,8 +29,8 @@ const CourseForm = (props) => {
     }
     else{
       setCourse({title, author, 'lessons':[]})
-      school.specialties[index].courses.push(course)
-      console.log(school.specialties[index].courses);
+      school.specialties[index].courses.push({title, author, 'lessons':[]})
+      console.log(school)
     }
 
     fetch('http://localhost:5000/schools/'+school.id,{
